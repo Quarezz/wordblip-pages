@@ -1,4 +1,5 @@
 // One-word demo. Never autoplays; plays the sentence once on tap at 250 WPM, then rests on the last word.
+// Labels follow the app reader button (app/home/read.tsx): Start / Stop; Start resumes from the same word.
 // Without JS the static word stays and the button stays hidden.
 (function () {
   var root = document.querySelector("[data-demo]");
@@ -38,7 +39,7 @@
   btn.addEventListener("click", function () {
     if (timer) { stop(false); return; }
     if (i >= words.length) i = 0;
-    btn.textContent = "Pause";
+    btn.textContent = "Stop";
     tick();
   });
   btn.hidden = false;
