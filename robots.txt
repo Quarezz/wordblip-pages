@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quarezz.github.io/wordblip-pages/sitemap.xml
