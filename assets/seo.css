@@ -426,3 +426,11 @@ footer nav a[aria-current="page"] { color: var(--subtle); }
 .dir-b .hero-b .demo-stage { height: 220px; border: 1px solid var(--border); border-radius: 24px; background: var(--panel); }
 .dir-b .hero-b .word { font-size: 54px; }
 .dir-b .hero-b .demo-bar { padding: 12px 2px 0; }
+
+/* ---------- Hero visual (phone scene) ---------- */
+/* The scene carries its own phone, so the hero drops the screenshot frame. */
+.shot--hero { max-width: 340px; padding: 0; border: 0; border-radius: 0; background: none; }
+.shot--hero picture, .shot--hero img { border-radius: 0; }
+@media (min-width: 880px) {
+  .hero .shot--hero { max-width: 280px; }
+}
